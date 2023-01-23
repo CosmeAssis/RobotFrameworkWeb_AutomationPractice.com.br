@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230123 20:42:40.716" rpa="false" schemaversion="3">
+<suite id="s1" name="Cadastro" source="C:\RobotFrameworkWeb_AutomationPractice.com.br\Features\Cadastro.robot">
+<test id="s1-t1" name="CN0001-Cadastro de usuário com sucesso" line="8">
+<kw name="Abrir o navegador" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230123 20:42:41.005" level="INFO">Opening browser 'googlechrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230123 20:42:41.004" endtime="20230123 20:42:42.386"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230123 20:42:42.386" endtime="20230123 20:42:42.553"/>
+</kw>
+<status status="PASS" starttime="20230123 20:42:41.004" endtime="20230123 20:42:42.553"/>
+</kw>
+<kw name="Dado que acesso o site do Qazando Shop" library="HomePages">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230123 20:42:42.557" level="INFO">Opening url '"http://automationpratice.com.br/"'</msg>
+<msg timestamp="20230123 20:42:42.952" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230123 20:42:42.952" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=109.0.5414.75)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00F1F243]
+	(No symbol) [0x00EA7FD1]
+	(No symbol) [0x00D9CF10]
+	(No symbol) [0x00D900EE]
+	(No symbol) [0x00D8EA07]
+	(No symbol) [0x00D8EDC2]
+	(No symbol) [0x00D9EA5B]
+	(No symbol) [0x00DFD187]
+	(No symbol) [0x00DE858C]
+	(No symbol) [0x00DFC9EB]
+	(No symbol) [0x00DE8386]
+	(No symbol) [0x00DC163C]
+	(No symbol) [0x00DC269D]
+	GetHandleVerifier [0x011B9A22+2655074]
+	GetHandleVerifier [0x011ACA24+2601828]
+	GetHandleVerifier [0x00FC8C0A+619850]
+	GetHandleVerifier [0x00FC7830+614768]
+	(No symbol) [0x00EB05FC]
+	(No symbol) [0x00EB5968]
+	(No symbol) [0x00EB5A55]
+	(No symbol) [0x00EC051B]
+	BaseThreadInitThunk [0x76E87D69+25]
+	RtlInitializeExceptionChain [0x7720BB9B+107]
+	RtlClearBits [0x7720BB1F+191]
+</msg>
+<status status="FAIL" starttime="20230123 20:42:42.556" endtime="20230123 20:42:42.961"/>
+</kw>
+<status status="FAIL" starttime="20230123 20:42:42.555" endtime="20230123 20:42:42.961"/>
+</kw>
+<kw name="E clico em Cadastro" library="HomePages">
+<status status="NOT RUN" starttime="20230123 20:42:42.962" endtime="20230123 20:42:42.963"/>
+</kw>
+<kw name="Quando preencho o campo Nome">
+<status status="NOT RUN" starttime="20230123 20:42:42.969" endtime="20230123 20:42:42.969"/>
+</kw>
+<kw name="E preencho o campo E-mail">
+<status status="NOT RUN" starttime="20230123 20:42:42.978" endtime="20230123 20:42:42.978"/>
+</kw>
+<kw name="E preencho o campo Senha">
+<status status="NOT RUN" starttime="20230123 20:42:42.983" endtime="20230123 20:42:42.983"/>
+</kw>
+<kw name="E clicar no botão Cadastrar">
+<status status="NOT RUN" starttime="20230123 20:42:42.990" endtime="20230123 20:42:42.990"/>
+</kw>
+<kw name="Então mensagem Cadastro realizado! é exibida">
+<status status="NOT RUN" starttime="20230123 20:42:42.995" endtime="20230123 20:42:42.996"/>
+</kw>
+<kw name="Fechar o navegador" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230123 20:42:43.151" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230123 20:42:42.998" endtime="20230123 20:42:43.151"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230123 20:42:43.151" endtime="20230123 20:42:45.382"/>
+</kw>
+<status status="PASS" starttime="20230123 20:42:42.997" endtime="20230123 20:42:45.382"/>
+</kw>
+<tag>cadastro_sucesso</tag>
+<status status="FAIL" starttime="20230123 20:42:41.003" endtime="20230123 20:42:45.383">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=109.0.5414.75)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00F1F243]
+	(No symbol) [0x00EA7FD1]
+	(No symbol) [0x00D9CF10]
+	(No symbol) [0x00D900EE]
+	(No symbol) [0x00D8EA07]
+	(No symbol) [0x00D8EDC2]
+	(No symbol) [0x00D9EA5B]
+	(No symbol) [0x00DFD187]
+	(No symbol) [0x00DE858C]
+	(No symbol) [0x00DFC9EB]
+	(No symbol) [0x00DE8386]
+	(No symbol) [0x00DC163C]
+	(No symbol) [0x00DC269D]
+	GetHandleVerifier [0x011B9A22+2655074]
+	GetHandleVerifier [0x011ACA24+2601828]
+	GetHandleVerifier [0x00FC8C0A+619850]
+	GetHandleVerifier [0x00FC7830+614768]
+	(No symbol) [0x00EB05FC]
+	(No symbol) [0x00EB5968]
+	(No symbol) [0x00EB5A55]
+	(No symbol) [0x00EC051B]
+	BaseThreadInitThunk [0x76E87D69+25]
+	RtlInitializeExceptionChain [0x7720BB9B+107]
+	RtlClearBits [0x7720BB1F+191]
+</status>
+</test>
+<doc>Testes automatizados Web utilizando o Robot Framework</doc>
+<status status="FAIL" starttime="20230123 20:42:40.718" endtime="20230123 20:42:45.393"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">cadastro_sucesso</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Cadastro">Cadastro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
