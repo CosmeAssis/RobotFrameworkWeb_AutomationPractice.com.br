@@ -2,11 +2,12 @@
 Resource    ../Libraries/Libraries.robot
 
 *** Variables ***
-${browser}    googlechrome
+*** Settings ***
+Resource    ../Resources/Maps/HomeMaps.robot
 
 *** Keywords ***
 Abrir o navegador
-    Open Browser    browser=${browser}
+    Open Browser    http://automationpratice.com.br/  chrome
     Maximize Browser Window
 
 Fechar o navegador
