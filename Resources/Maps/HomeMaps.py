@@ -1,0 +1,1 @@
+HomeBtnCadastro = "//a[contains(.,'Cadastro')]"

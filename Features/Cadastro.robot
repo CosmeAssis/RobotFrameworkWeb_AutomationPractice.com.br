@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation   Testes automatizados Web utilizando o Robot Framework
 Resource    ../Resources/Pages/HomePages.robot
+Resource    ../Resources/base.robot
 Test Setup       Abrir o navegador
 Test Teardown    Fechar o navegador
 

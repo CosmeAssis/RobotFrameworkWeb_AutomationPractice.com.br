@@ -1,122 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230123 20:42:40.716" rpa="false" schemaversion="3">
-<suite id="s1" name="Cadastro" source="C:\RobotFrameworkWeb_AutomationPractice.com.br\Features\Cadastro.robot">
-<test id="s1-t1" name="CN0001-Cadastro de usuário com sucesso" line="8">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230123 21:24:52.626" rpa="false" schemaversion="3">
+<suite id="s1" name="RobotFrameworkWeb AutomationPractice.com.br" source="C:\RobotFrameworkWeb_AutomationPractice.com.br">
+<suite id="s1-s1" name="Features" source="C:\RobotFrameworkWeb_AutomationPractice.com.br\Features">
+<suite id="s1-s1-s1" name="Cadastro" source="C:\RobotFrameworkWeb_AutomationPractice.com.br\Features\Cadastro.robot">
+<test id="s1-s1-s1-t1" name="CN0001-Cadastro de usuário com sucesso" line="9">
 <kw name="Abrir o navegador" library="base" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=${browser}</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230123 20:42:41.005" level="INFO">Opening browser 'googlechrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20230123 20:42:41.004" endtime="20230123 20:42:42.386"/>
+<msg timestamp="20230123 21:24:53.072" level="INFO">Opening browser 'firefox' to base url 'googlechrome'.</msg>
+<msg timestamp="20230123 21:24:53.086" level="INFO">Firefox driver log is always forced to to: C:\RobotFrameworkWeb_AutomationPractice.com.br\results\geckodriver-53.log</msg>
+<msg timestamp="20230123 21:24:53.122" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230123 21:24:53.123" level="FAIL">OSError: [WinError 216] Esta versão de %1 não é compatível com a versão do Windows sendo executada. Verifique as informações de sistema do computador e contate o fornecedor do software</msg>
+<status status="FAIL" starttime="20230123 21:24:53.069" endtime="20230123 21:24:53.132"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230123 20:42:42.386" endtime="20230123 20:42:42.553"/>
+<status status="NOT RUN" starttime="20230123 21:24:53.133" endtime="20230123 21:24:53.134"/>
 </kw>
-<status status="PASS" starttime="20230123 20:42:41.004" endtime="20230123 20:42:42.553"/>
-</kw>
-<kw name="Dado que acesso o site do Qazando Shop" library="HomePages">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${url}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230123 20:42:42.557" level="INFO">Opening url '"http://automationpratice.com.br/"'</msg>
-<msg timestamp="20230123 20:42:42.952" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230123 20:42:42.952" level="FAIL">InvalidArgumentException: Message: invalid argument
-  (Session info: chrome=109.0.5414.75)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00F1F243]
-	(No symbol) [0x00EA7FD1]
-	(No symbol) [0x00D9CF10]
-	(No symbol) [0x00D900EE]
-	(No symbol) [0x00D8EA07]
-	(No symbol) [0x00D8EDC2]
-	(No symbol) [0x00D9EA5B]
-	(No symbol) [0x00DFD187]
-	(No symbol) [0x00DE858C]
-	(No symbol) [0x00DFC9EB]
-	(No symbol) [0x00DE8386]
-	(No symbol) [0x00DC163C]
-	(No symbol) [0x00DC269D]
-	GetHandleVerifier [0x011B9A22+2655074]
-	GetHandleVerifier [0x011ACA24+2601828]
-	GetHandleVerifier [0x00FC8C0A+619850]
-	GetHandleVerifier [0x00FC7830+614768]
-	(No symbol) [0x00EB05FC]
-	(No symbol) [0x00EB5968]
-	(No symbol) [0x00EB5A55]
-	(No symbol) [0x00EC051B]
-	BaseThreadInitThunk [0x76E87D69+25]
-	RtlInitializeExceptionChain [0x7720BB9B+107]
-	RtlClearBits [0x7720BB1F+191]
-</msg>
-<status status="FAIL" starttime="20230123 20:42:42.556" endtime="20230123 20:42:42.961"/>
-</kw>
-<status status="FAIL" starttime="20230123 20:42:42.555" endtime="20230123 20:42:42.961"/>
-</kw>
-<kw name="E clico em Cadastro" library="HomePages">
-<status status="NOT RUN" starttime="20230123 20:42:42.962" endtime="20230123 20:42:42.963"/>
-</kw>
-<kw name="Quando preencho o campo Nome">
-<status status="NOT RUN" starttime="20230123 20:42:42.969" endtime="20230123 20:42:42.969"/>
-</kw>
-<kw name="E preencho o campo E-mail">
-<status status="NOT RUN" starttime="20230123 20:42:42.978" endtime="20230123 20:42:42.978"/>
-</kw>
-<kw name="E preencho o campo Senha">
-<status status="NOT RUN" starttime="20230123 20:42:42.983" endtime="20230123 20:42:42.983"/>
-</kw>
-<kw name="E clicar no botão Cadastrar">
-<status status="NOT RUN" starttime="20230123 20:42:42.990" endtime="20230123 20:42:42.990"/>
-</kw>
-<kw name="Então mensagem Cadastro realizado! é exibida">
-<status status="NOT RUN" starttime="20230123 20:42:42.995" endtime="20230123 20:42:42.996"/>
+<status status="FAIL" starttime="20230123 21:24:53.068" endtime="20230123 21:24:53.134"/>
 </kw>
 <kw name="Fechar o navegador" library="base" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230123 20:42:43.151" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230123 20:42:42.998" endtime="20230123 20:42:43.151"/>
+<msg timestamp="20230123 21:24:53.137" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230123 21:24:53.136" endtime="20230123 21:24:53.138"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230123 20:42:43.151" endtime="20230123 20:42:45.382"/>
+<status status="PASS" starttime="20230123 21:24:53.139" endtime="20230123 21:24:53.141"/>
 </kw>
-<status status="PASS" starttime="20230123 20:42:42.997" endtime="20230123 20:42:45.382"/>
+<status status="PASS" starttime="20230123 21:24:53.135" endtime="20230123 21:24:53.141"/>
 </kw>
 <tag>cadastro_sucesso</tag>
-<status status="FAIL" starttime="20230123 20:42:41.003" endtime="20230123 20:42:45.383">InvalidArgumentException: Message: invalid argument
-  (Session info: chrome=109.0.5414.75)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00F1F243]
-	(No symbol) [0x00EA7FD1]
-	(No symbol) [0x00D9CF10]
-	(No symbol) [0x00D900EE]
-	(No symbol) [0x00D8EA07]
-	(No symbol) [0x00D8EDC2]
-	(No symbol) [0x00D9EA5B]
-	(No symbol) [0x00DFD187]
-	(No symbol) [0x00DE858C]
-	(No symbol) [0x00DFC9EB]
-	(No symbol) [0x00DE8386]
-	(No symbol) [0x00DC163C]
-	(No symbol) [0x00DC269D]
-	GetHandleVerifier [0x011B9A22+2655074]
-	GetHandleVerifier [0x011ACA24+2601828]
-	GetHandleVerifier [0x00FC8C0A+619850]
-	GetHandleVerifier [0x00FC7830+614768]
-	(No symbol) [0x00EB05FC]
-	(No symbol) [0x00EB5968]
-	(No symbol) [0x00EB5A55]
-	(No symbol) [0x00EC051B]
-	BaseThreadInitThunk [0x76E87D69+25]
-	RtlInitializeExceptionChain [0x7720BB9B+107]
-	RtlClearBits [0x7720BB1F+191]
-</status>
+<status status="FAIL" starttime="20230123 21:24:53.066" endtime="20230123 21:24:53.142">Setup failed:
+OSError: [WinError 216] Esta versão de %1 não é compatível com a versão do Windows sendo executada. Verifique as informações de sistema do computador e contate o fornecedor do software</status>
 </test>
 <doc>Testes automatizados Web utilizando o Robot Framework</doc>
-<status status="FAIL" starttime="20230123 20:42:40.718" endtime="20230123 20:42:45.393"/>
+<status status="FAIL" starttime="20230123 21:24:52.696" endtime="20230123 21:24:53.146"/>
+</suite>
+<status status="FAIL" starttime="20230123 21:24:52.687" endtime="20230123 21:24:53.151"/>
+</suite>
+<status status="FAIL" starttime="20230123 21:24:52.637" endtime="20230123 21:24:53.156"/>
 </suite>
 <statistics>
 <total>
@@ -126,9 +51,12 @@ Backtrace:
 <stat pass="0" fail="1" skip="0">cadastro_sucesso</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Cadastro">Cadastro</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotFrameworkWeb AutomationPractice.com.br">RobotFrameworkWeb AutomationPractice.com.br</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Features">RobotFrameworkWeb AutomationPractice.com.br.Features</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Cadastro">RobotFrameworkWeb AutomationPractice.com.br.Features.Cadastro</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230123 21:24:53.061" level="ERROR">Error in file 'C:\RobotFrameworkWeb_AutomationPractice.com.br\Resources\Pages\HomePages.robot' on line 3: Resource file '..\Maps\HomeMaps.robot' does not exist.</msg>
 </errors>
 </robot>

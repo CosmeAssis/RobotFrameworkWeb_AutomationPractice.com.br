@@ -1,12 +1,13 @@
 *** Settings ***
 Resource    ../Libraries/Libraries.robot
+Variables    ../Resources/Maps/HomeMaps.py
 
 *** Variables ***
-${browser}    googlechrome
+${browser}           googlechrome
 
 *** Keywords ***
 Abrir o navegador
-    Open Browser    browser=${browser}
+    Open Browser    ${browser}
     Maximize Browser Window
 
 Fechar o navegador
