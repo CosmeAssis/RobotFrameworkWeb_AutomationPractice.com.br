@@ -1,8 +1,6 @@
 *** Settings ***
 Documentation   Testes automatizados Web utilizando o Robot Framework
 Resource    ../Resources/Pages/HomePages.robot
-Test Setup       Abrir o navegador
-Test Teardown    Fechar o navegador
 
 *** Test Cases ***
 CN0001-Cadastro de usuário com sucesso
